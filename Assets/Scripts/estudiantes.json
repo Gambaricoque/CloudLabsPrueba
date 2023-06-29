@@ -1,0 +1,27 @@
+﻿{
+	"basedatos":
+[
+	 
+	 {"nombre":"Mateo",
+    "apellido":"Garzon",
+	"codigo" : 1,
+	"correo" : "mateo@mail.net",
+	  "edad": 15,
+	"nota" : 5 },
+
+	   {"nombre":"Jose",
+    "apellido":"Lopez",
+	"codigo" : 2,
+	"correo" : "jose@mail.net",
+	  "edad": 22,
+	"nota" : 1
+	 },
+
+	   {"nombre":"Ana",
+    "apellido":"Rojas",
+	"codigo" : 3,
+	"correo" : "ana@mail.net",
+	  "edad":23,
+	"nota" : 3 }	
+]
+}
