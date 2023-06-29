@@ -7,15 +7,19 @@ using System.Collections.Generic;
 
 public class Handling_Files_View : MonoBehaviour
 {
-    public Text displayText; // Referencia al componente text
+    public Text displayText; // Referencia al componente Text
     public float maxHeight = 1000f; // Altura máxima del componente Text
+
     
+    public Toggle checkbox;
+
 
     void Start()
     {
         string dataText = ReadingJsonFile();
         //displayText.text = dataText;//
-        UpdateTextComponent(dataText);
+     
+        checkbox = GetComponentInChildren<Toggle>();
     }
 
     void UpdateTextComponent(string newText)
@@ -30,7 +34,7 @@ public class Handling_Files_View : MonoBehaviour
         displayText.rectTransform.sizeDelta = new Vector2(displayText.rectTransform.sizeDelta.x, Mathf.Min(textHeight, maxHeight));
     }
 
-    static string ReadingJsonFile()
+    string ReadingJsonFile()
     {
         string path = Path.Combine(Application.dataPath, "Scripts/estudiantes.json");
         try
@@ -38,15 +42,34 @@ public class Handling_Files_View : MonoBehaviour
             string jsonString = File.ReadAllText(path);
             ContainerParsedJson jsonParsedTransformed = JsonUtility.FromJson<ContainerParsedJson>(jsonString);
             string dataText = "";
+
+            int vectory = 35;
+            
             foreach (Student studentData in jsonParsedTransformed.basedatos)
             {
-               dataText += "Nombre: " + studentData.nombre + "\t";
+                GameObject lineContainer = new GameObject("LineContainer");
+                lineContainer.transform.SetParent(displayText.transform, false);
+
+                dataText += "Nombre: " + studentData.nombre + "\t";
                 dataText += "Apellido: " + studentData.apellido + "\t";
                 dataText += "Codigo: " + studentData.codigo + "\t";
                 dataText += "Nota: " + studentData.nota + "\t";
                 dataText += "Correo: " + studentData.correo + "\t";
                 dataText += "Edad: " + studentData.edad + "\n";
-                //aqui deberia venir parte del codigo del checkbox
+
+                // Mover el texto al contenedor
+                displayText.transform.SetParent(lineContainer.transform, false);
+
+                // Generar el checkbox como hijo de lineContainer
+                Toggle newCheckbox = Instantiate(checkbox, lineContainer.transform);
+
+                vectory -= 22;
+                Vector3 customPosition = new Vector3(0, vectory, 0); // Cambia los valores según tus necesidades
+                newCheckbox.transform.localPosition = customPosition;
+
+                // Agregar un listener para manejar los cambios de estado del checkbox
+                
+                UpdateTextComponent(dataText);
             }
             return dataText;
         }
@@ -56,6 +79,8 @@ public class Handling_Files_View : MonoBehaviour
             return "Cannot handle JSON metadata";
         }
     }
+
+    
 }
 
 [System.Serializable]
