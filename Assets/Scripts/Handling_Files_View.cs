@@ -55,7 +55,7 @@ public class Handling_Files_View : MonoBehaviour
                 dataText += "Codigo: " + studentData.codigo + "\t";
                 dataText += "Nota: " + studentData.nota + "\t";
                 dataText += "Correo: " + studentData.correo + "\t";
-                dataText += "Edad: " + studentData.edad + "\n";
+                dataText += "Edad: " + studentData.edad + "\n"+"\n";
 
                 // Mover el texto al contenedor
                 displayText.transform.SetParent(lineContainer.transform, false);

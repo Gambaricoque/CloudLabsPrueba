@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Mateo",
+    "apellido": "Garzon",
+    "codigo": "1",
+    "correo": "mateo@mail.net",
+    "edad": "15",
+    "nota": 100.0,
+    "aprobado": false,
+    "estadoNota": true
+  },
+  {
+    "nombre": "Jose",
+    "apellido": "Lopez",
+    "codigo": "2",
+    "correo": "jose@mail.net",
+    "edad": "22",
+    "nota": 20.0,
+    "aprobado": false,
+    "estadoNota": true
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Rojas",
+    "codigo": "3",
+    "correo": "ana@mail.net",
+    "edad": "23",
+    "nota": 60.0,
+    "aprobado": true,
+    "estadoNota": true
+  }
+]
