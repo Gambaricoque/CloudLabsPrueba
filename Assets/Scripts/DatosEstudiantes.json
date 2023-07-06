@@ -5,9 +5,9 @@
     "codigo": "1",
     "correo": "mateo@mail.net",
     "edad": "15",
-    "nota": 100.0,
-    "aprobado": false,
-    "estadoNota": true
+    "nota": 5.0,
+    "aprobado": true,
+    "estadoNota": false
   },
   {
     "nombre": "Jose",

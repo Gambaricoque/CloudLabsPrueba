@@ -19,7 +19,7 @@ public class NotasManager : MonoBehaviour
     
     public Button verificarButton;
 
-    private const string jsonFilePath = "Assets/Scripts/DatosEstudiantes.json";
+    public const string jsonFilePath = "Assets/Scripts/DatosEstudiantes.json";
 
     void Start()
     {
@@ -170,4 +170,5 @@ public class Estudiante
     public float nota;
     public bool aprobado;
     public bool estadoNota;
+    internal IEnumerable<Estudiante> estudiante;
 }

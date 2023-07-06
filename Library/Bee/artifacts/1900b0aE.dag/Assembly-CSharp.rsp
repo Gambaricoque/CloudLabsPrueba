@@ -347,8 +347,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/DataDisplay.cs"
+"Assets/Scripts/DragHandler.cs"
+"Assets/Scripts/DropSlot.cs"
+"Assets/Scripts/DropZone.cs"
+"Assets/Scripts/EstudianteDragHandler.cs"
+"Assets/Scripts/EstudiantesManager.cs"
 "Assets/Scripts/Handling_Files_View.cs"
-"Assets/Scripts/JsonReader.cs"
 "Assets/Scripts/NotasManager.cs"
 "Assets/Scripts/Persona.cs"
 -langversion:9.0
