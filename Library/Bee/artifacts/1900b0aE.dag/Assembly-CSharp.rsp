@@ -320,9 +320,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
--r:"C:/Users/jorge/Documents/GitHub/CloudLabsPrueba/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/jorge/Documents/GitHub/CloudLabsPrueba/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
--r:"C:/Users/jorge/Documents/GitHub/CloudLabsPrueba/Library/PackageCache/jillejr.newtonsoft.json-for-unity@f2c6cb0981/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll"
+-r:"D:/Github/CloudLabsPrueba/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"D:/Github/CloudLabsPrueba/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/Github/CloudLabsPrueba/Library/PackageCache/jillejr.newtonsoft.json-for-unity@f2c6cb0981/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -348,13 +348,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/DataDisplay.cs"
 "Assets/Scripts/DragHandler.cs"
-"Assets/Scripts/DropSlot.cs"
 "Assets/Scripts/DropZone.cs"
 "Assets/Scripts/EstudianteDragHandler.cs"
 "Assets/Scripts/EstudiantesManager.cs"
 "Assets/Scripts/Handling_Files_View.cs"
 "Assets/Scripts/NotasManager.cs"
 "Assets/Scripts/Persona.cs"
+"Assets/Scripts/SceneChanger.cs"
 -langversion:9.0
 
 /deterministic
